@@ -133,6 +133,33 @@ matrix_addition(matrix_one, matrix_two)
 
 #De-dup
 
+def remove_duplicate(array):
+    new_array = []
+    for item in array:
+        if item not in new_array:
+
+            new_array.append(item)
+    print(new_array)
+
 
 #Bonus: Matrix Multiplication
 
+def matrix_multiplication(matrix_one, matrix_two):
+    print("Matrix Multiplication")
+    matrix_multiplication_list = []
+    i = 0
+    n = 0
+    for index in matrix_one:
+        matrix_multiplication_number = []
+        n = 0
+        for number in index:
+            result = 0
+            result = int(matrix_one[i][n]) * int(matrix_two[i][n])
+            n += 1
+            matrix_multiplication_number.append(result)
+        i += 1
+
+        matrix_multiplication_list.append(matrix_multiplication_number)
+    print(matrix_multiplication_list)
+
+matrix_multiplication(matrix_one, matrix_two)
