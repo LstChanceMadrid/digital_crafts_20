@@ -27,5 +27,5 @@ App that has the code to assort an array of integers into an ascending or descen
 
 - try_except.py
 
-Notes of days to come exercises
+Notes of days to come exercises.
 
